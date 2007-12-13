@@ -44,7 +44,7 @@ block GeneratorInterfaceAOD = {
 #
     "keep edmGenInfoProduct_source_*_*",
     "keep *_genParticleCandidates_*_*",
-    "keep *_genParticles_*_*",
+    "keep recoGenParticles_genParticles_*_*",
     "keep *_genEventWeight_*_*",
     "keep *_genEventScale_*_*",
     "keep *_genEventProcID_*_*",
