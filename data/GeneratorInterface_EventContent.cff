@@ -3,10 +3,6 @@ block GeneratorInterfaceFEVT = {
   untracked vstring outputCommands = {
     "keep edmHepMCProduct_source_*_*",
     "keep edmGenInfoProduct_source_*_*",
-#
-# Keeping both genParticleCandidates and genParticle for smooth transition
-#
-    "keep *_genParticleCandidates_*_*",
     "keep *_genParticles_*_*",
     "keep *_genEventWeight_*_*",
     "keep *_genEventScale_*_*",
@@ -20,10 +16,6 @@ block GeneratorInterfaceFEVT = {
 #RECO content
 block GeneratorInterfaceRECO = {
   untracked vstring outputCommands = {
-#
-# Keeping both genParticleCandidates and genParticle for smooth transition
-#
-    "keep *_genParticleCandidates_*_*",
     "keep *_genParticles_*_*",
     "keep *_genEventWeight_*_*",
     "keep *_genEventScale_*_*",
@@ -39,11 +31,7 @@ block GeneratorInterfaceRECO = {
 #AOD content
 block GeneratorInterfaceAOD = {
   untracked vstring outputCommands = {
-#
-# Keeping both genParticleCandidates and genParticle for smooth transition
-#
     "keep edmGenInfoProduct_source_*_*",
-    "keep *_genParticleCandidates_*_*",
     "keep recoGenParticles_genParticles_*_*",
     "keep *_genEventWeight_*_*",
     "keep *_genEventScale_*_*",
