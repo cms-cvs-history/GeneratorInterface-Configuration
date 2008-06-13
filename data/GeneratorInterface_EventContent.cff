@@ -1,5 +1,5 @@
-#Full Event content 
-block GeneratorInterfaceFEVT = {
+#RAW content 
+block GeneratorInterfaceRAW = {
   untracked vstring outputCommands = {
     "keep edmHepMCProduct_source_*_*",
     "keep edmGenInfoProduct_source_*_*",
@@ -17,12 +17,12 @@ block GeneratorInterfaceFEVT = {
 #RECO content
 block GeneratorInterfaceRECO = {
   untracked vstring outputCommands = {
+    "keep edmHepMCProduct_source_*_*",
+    "keep edmGenInfoProduct_source_*_*",
     "keep *_genParticles_*_*",
     "keep *_genEventWeight_*_*",
     "keep *_genEventScale_*_*",
     "keep *_genEventPdfInfo_*_*", 
-    "keep edmHepMCProduct_source_*_*",
-    "keep edmGenInfoProduct_source_*_*",
     "keep *_genEventProcID_*_*",
     "keep *_genEventRunInfo_*_*",
     "keep edmAlpgenInfoProduct_source_*_*"
@@ -41,7 +41,6 @@ block GeneratorInterfaceAOD = {
     "keep *_genEventProcID_*_*",
     "keep *_genEventRunInfo_*_*",
     "keep edmAlpgenInfoProduct_source_*_*"
-
   }		
 }	
 
